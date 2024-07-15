@@ -6,7 +6,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className=" bg-yellow-300  ">
+    <div className="bg-slate-50 ">
       <div className="flex w-full  pt-5 pb-5 ">
         <div className="w-1/4 flex flex-col items-center ">
           <div>
