@@ -40,9 +40,9 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container h-screen bg-slate-100  flex flex-col justify-center items-center">
-      <div className="w-[20rem] h-[30rem] flex flex-col justify-around items-center bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-4xl mb-4">Login</h2>
+    <div className="login-container font-Merriweather h-screen bg-yellow-300 flex flex-col justify-center items-center">
+      <div className="w-[20rem] h-[28rem] flex flex-col justify-around items-center bg-white p-6 rounded-lg shadow">
+        <h2 className="text-4xl font-madimione mb-4">Login</h2>
         <form onSubmit={loginData} className="w-full">
           <div className="w-full mb-4">
             <input

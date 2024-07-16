@@ -5,11 +5,16 @@ import Footer from "./Components/Footer";
 import Product from "./Components/Product";
 import Categorybar from "./Components/Categorybar";
 import Categories from "./Pages/Categories";
+import Login from './Account/Login'
+import Signup from './Account/Signup'
+
 
 const App = () => {
   return (
-    <div className="h-screen w-full  ">
-      <Categories/>
+    <div className="h-screen w-full overflow-auto no-scrollbar  ">
+      {/* <Categories/> */}
+      <Login/>
+      <Signup/>
     </div>
   );
 };

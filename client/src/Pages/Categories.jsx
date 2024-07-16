@@ -14,7 +14,7 @@ const Categories = () => {
     //     </div>
     //     <div><Footer/></div>
     // </div>
-    <div className="h-full">
+    <div className="h-full ">
       <div className="flex flex-col h-full">
         <div className="">
           <Navbar />
@@ -27,7 +27,9 @@ const Categories = () => {
             <Product />
           </div>
         </div>
+        
       </div>
+      <Footer/>
     </div>
   );
 };

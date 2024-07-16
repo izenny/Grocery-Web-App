@@ -17,10 +17,10 @@ const Product = () => {
             <h1 className="text-lg ">52rs</h1>
           </div>
           <div className="">
-            <button className="p-1 m-1 w-16 bg-orange-500 rounded-lg">
+            <button className="p-1 m-1 w-16 font-Merriweather text-white hover:scale-105 bg-orange-500 rounded-lg">
               buy
             </button>
-            <button className="p-1 m-1 w-16 bg-orange-500 rounded-lg">
+            <button className="p-1 m-1 w-16 font-Merriweather text-white hover:scale-105 bg-orange-500 rounded-lg">
               cart
             </button>
           </div>
