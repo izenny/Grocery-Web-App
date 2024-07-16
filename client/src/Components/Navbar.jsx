@@ -44,7 +44,7 @@
 //             <IoSearch className="absolute top-2 right-3 " />
 //           </div>
 
-//           <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl  cursor-pointer hover:scale-110"> 
+//           <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl  cursor-pointer hover:scale-110">
 //             <IoCartOutline />
 //           </div>
 //           <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
@@ -68,22 +68,14 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { IoIosLeaf } from "react-icons/io";
 
 const Navbar = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const categories = [
-    { name: 'Fruits', link: '#' },
-    { name: 'Vegetables', link: '#' },
-    { name: 'Dairy', link: '#' },
-    { name: 'Snacks', link: '#' },
-    // Add more categories as needed
-  ];
-
   return (
-    <div className="bg-slate-50  p-1">
+    <div className="shadow p-1">
       <div className="flex h-[4rem] justify-between items-center">
         <div className="flex items-center w-1/6 justify-center h-full ml-4">
           <IoIosLeaf className="text-green-800 mr-1 text-3xl" />
-          <h2 className="text-3xl text-orange-500 font-Merriweather">Grocery</h2>
+          <h2 className="text-3xl text-orange-500 font-Merriweather">
+            Grocery
+          </h2>
         </div>
         <div className="flex-1  h-full">
           <ul className="flex h-full items-center justify-around font-serif">
@@ -96,19 +88,6 @@ const Navbar = () => {
               onMouseLeave={() => setIsHovered(false)}
             >
               Category
-              {isHovered && (
-                <div className="absolute top-full  bg-white shadow-lg border-t border-gray-200">
-                  <ul className="p-4 flex">
-                    {categories.map((category, index) => (
-                      <li key={index} className="p-2 hover:bg-gray-100">
-                        <a href={category.link} className="text-gray-800">
-                          {category.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </li>
             <li className="hover:scale-110 hover:text-green-700 transform transition-transform duration-200 cursor-pointer">
               New Products
@@ -127,17 +106,17 @@ const Navbar = () => {
               type="text"
               name=""
               id=""
-              className="input shadow-lg font-sans border-gray-300 px-5 py-1 rounded-xl w-56 transition-all outline-none"
+              className="input shadow-md font-sans  px-5 py-1 rounded-xl w-56 transition-all outline-none"
             />
             <IoSearch className="absolute top-2 right-3" />
           </div>
-          <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
+          <div className="text-2xl shadow-md bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
             <IoCartOutline />
           </div>
-          <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
+          <div className="text-2xl shadow-md bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
             <AiOutlineHeart />
           </div>
-          <div className="text-2xl bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
+          <div className="text-2xl shadow-md bg-white hover:text-green-700 p-2 rounded-xl cursor-pointer hover:scale-110">
             <LuUser2 />
           </div>
         </div>
@@ -147,4 +126,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
